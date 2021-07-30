@@ -24,7 +24,7 @@
 }
 .dark-theme
 {
-    --background-color: rgba(24, 26, 27, 0.94);
+    --background-color: rgba(24, 26, 27, 0.96);    
     --font-color: rgba(255, 255, 255, 0.88);
 }
 body
@@ -32,3 +32,6 @@ body
     color: var(--font-color) !important;
     background-color: var(--background-color) !important;
 }
+
+
+/* old background color opacity = 0.94 */
