@@ -10,3 +10,25 @@
     left: 10%;
     width: 50%;
 }
+
+#icon
+{
+    width: 30px;
+    cursor: pointer;
+}
+
+:root
+{
+    --background-color: #edf2fc;
+    --font-color: #212121;
+}
+.dark-theme
+{
+    --background-color: rgba(24, 26, 27, 0.94);
+    --font-color: rgba(255, 255, 255, 0.88);
+}
+body
+{   
+    color: var(--font-color) !important;
+    background-color: var(--background-color) !important;
+}
