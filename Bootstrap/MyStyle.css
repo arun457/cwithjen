@@ -32,7 +32,14 @@ body
     color: var(--font-color) !important;
     background-color: var(--background-color) !important;
 }
-a { color: inherit; } 
+a
+{ 
+    color: inherit;
+} 
 
+/* a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+} */
 
 /* old background color opacity = 0.94 */
