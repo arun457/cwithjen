@@ -32,6 +32,7 @@ body
     color: var(--font-color) !important;
     background-color: var(--background-color) !important;
 }
+a { color: inherit; } 
 
 
 /* old background color opacity = 0.94 */
