@@ -32,10 +32,10 @@ body
     color: var(--font-color) !important;
     background-color: var(--background-color) !important;
 }
-a
+/*a
 { 
     color: inherit;
-} 
+} */
 
 /* a, a:hover, a:focus, a:active {
     text-decoration: none;
