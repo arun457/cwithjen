@@ -32,11 +32,19 @@ body
     color: var(--font-color) !important;
     background-color: var(--background-color) !important;
 }
+<<<<<<< HEAD
 /*a
 { 
     color: inherit;
 } */
 
+=======
+/* a
+{ 
+    color: inherit;
+} 
+ */
+>>>>>>> ea3d9f85f0eadaaef15393c3eb8578d7f9403167
 /* a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
