@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   
-<!-- Mirrored from cwithjen.somee.com/11_Structure.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Aug 2021 18:11:01 GMT -->
+<!-- Mirrored from cwithjen.somee.com/11_Structure.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Aug 2021 07:01:08 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <!-- Required meta tags -->
@@ -28,7 +28,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">.NET</a>
+      <a class="navbar-brand" href="#">C</a>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">      <img src="img/moon.png" id="icon">
 
@@ -75,9 +75,7 @@
             <li class="nav-item">
               <a class="nav-link" href="12_DataFiles.html">Files</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="13_Graphics.html">Graphics</a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="14_FORTRAN.html">FORTRAN</a>
             </li>
@@ -293,6 +291,73 @@
               <img src="img/11%20Structure/Nested%20Structure.png" class="img-thumbnail" width="500" /> <br /><br />
 
 
+              <h4 class="text-primary">Similarities between Structure and Union</h4>
+              <ul>
+                    <li> Both are user-defined data types used to store data of different types as a single unit. </li>
+                    <li> Their members can be variable of any type, including structures and unions or arrays. </li>
+                    <li> A structure or a union can be passed by value to functions and returned by value by functions. </li> 
+                    <li> '.' operator is used for accessing members. </li>
+                    <li> Both structures and unions support only assignment = and sizeof operators. </li> 
+              </ul>
+
+              <h4 class="text-primary">Difference between Structure and Union</h4>
+              <table border="1">
+                  <tr>
+                      <th></th>
+                      <th>Structure</th>
+                      <th>Union</th>
+                  </tr>
+
+                  <tr>
+                      <td>1. Keyword</td>
+                      <td>The Keyword struct is used to define a structure.</td>
+                      <td>The Keyword union is used to define a union.</td>
+                  </tr>
+
+                  <tr>
+                      <td>2. Initialization of Members</td>
+                      <td>Several members of a structure can be initialize at once.</td>
+                      <td>Only the first member of a union can be initialized. </td>
+                  </tr>
+
+                  <tr>
+                      <td>3. Accessing Members</td>
+                      <td>All structure member can be accessed at once. </td>
+                      <td>All Union member cannot be accessed at once. Only one member can be accessed at a time. </td>
+                  </tr>
+
+                  <tr>
+                      <td>4. Value Altering</td>
+                      <td>Altering the value of a member will not affect other members of the structure. </td>
+                      <td>Altering the value of any of the member will alter other member values. </td>
+                  </tr>
+
+                  <tr>
+                      <td>5. Memory</td>
+                      <td>In structure, each member has its own storage location.</td>
+                      <td>In union, all the member uses the same memory location.</td>
+                  </tr>
+
+                  <tr>
+                      <td>6. Size</td>
+                      <td>The amount of memory required to store a structure variable is sum of sizes of all the member.</td>
+                      <td>Amount of memory required is the size of the largest union member. </td>
+                  </tr>
+
+                  <tr>
+                      <td>7. Example:</td>
+                      <td><img src="img/11%20Structure/Structure%20Difference.png" class="img-thumbnail" /></td>
+                      <td><img src="img/11%20Structure/Union%20Difference.png" class="img-thumbnail" /></td>
+                  </tr>
+
+                  <tr>
+                      <td>8. Total memory allocation</td>
+                      <td>Total bytes = 20 + 2 + 4 = 26</td>
+                      <td>20 bytes are there between name, rollno, and marks because the largest memory occupies by char array which is 20 bytes.</td>
+                  </tr>
+
+              </table>
+
           </div>
 
       </div>
@@ -318,7 +383,7 @@
 
   </body>
 
-<!-- Mirrored from cwithjen.somee.com/11_Structure.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Aug 2021 18:11:01 GMT -->
+<!-- Mirrored from cwithjen.somee.com/11_Structure.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Aug 2021 07:01:11 GMT -->
 </html>
 
  
