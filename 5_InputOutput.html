@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   
-<!-- Mirrored from cwithjen.somee.com/5_InputOutput.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Sep 2021 13:43:19 GMT -->
+<!-- Mirrored from cwithjen.somee.com/5_InputOutput.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:23:43 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <!-- Required meta tags -->
@@ -12,10 +12,10 @@
 
     <!-- Bootstrap CSS -->
 
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">  <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
 
       <link href="Bootstrap/MyStyle.css" rel="stylesheet" />
-    <title>C-Programming</title>
+    <title>cwithjen</title>
 
     
 
@@ -30,7 +30,7 @@
       </button>
       <a class="navbar-brand" href="#">C</a>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">      <img src="img/moon.png" id="icon">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
@@ -99,9 +99,13 @@
       <li class="nav-item" role="presentation">
         <a class="nav-link" id="Outlines-tab" data-toggle="tab" href="#Outlines" role="tab" aria-controls="Outlines" aria-selected="true">Outlines</a>
       </li>
+      
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="Notes-tab" data-toggle="tab" href="#Notes" role="tab" aria-controls="Notes" aria-selected="false">Notes</a>
+      </li>
 
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="Notes-tab" data-toggle="tab" href="#Notes" role="tab" aria-controls="Notes" aria-selected="false">Notes</a>
+        <a class="nav-link active" id="Questions-tab" data-toggle="tab" href="#Questions" role="tab" aria-controls="Questions" aria-selected="false">Questions</a>
       </li>
 
     </ul>
@@ -113,11 +117,38 @@
                    <div class="row">
                         <div class="p-3 col-lg-4 col-md-12">
                             <h6>Input and Output</h6>
-                               <ol>
-                                   <li>Formatted Input/Output</li>
-                                    <li>Character Input/Output</li>
-                                    <li>Programs using Input/Output Statements</li>
-                               </ol>
+                               <ul>
+                                    <li>Introduction to Console I/O function</li>
+                                    <li>Types of Console I/O functions</li>
+                                    <li>Formatted Input Function</li>
+                                        <li class="list-unstyled">
+                                            <ul>
+                                                <li>scanf()</li>
+                                            </ul>
+                                        </li>
+                                    <li>Formatted Output Function</li>
+                                        <li class="list-unstyled">
+                                            <ul>
+                                                <li>printf()</li>
+                                            </ul>
+                                        </li>
+                                    <li>Unformatted Input functions</li>
+                                        <li class="list-unstyled">
+                                            <ul>
+                                                <li>gets</li>
+                                                <li>getch()</li>
+                                                <li>getche()</li>
+                                                <li>getchar()</li>
+                                            </ul>
+                                        </li>
+                                    <li>Unformatted Output functions</li>
+                                        <li class="list-unstyled">
+                                            <ul>
+                                                <li>puts</li>
+                                                <li>putch()</li>
+                                                <li>putche()</li>
+                                                <li>putchar()</li>                                            </ul>                                        </li>
+                               </ul>
                         </div>
                     </div>
 
@@ -125,9 +156,54 @@
 
         
 
-      
+      <div class="tab-pane fade show active" id="Questions" role="tabpanel" aria-labelledby="Questions-tab">
 
-      <div class="tab-pane fade show active" id="Notes" role="tabpanel" aria-labelledby="Notes-tab">
+          <div class="row">
+
+               <div class="p-3">
+
+                   <h6> Assignment Set </h6>
+                     <ol>
+                      <li>What are the standard input and output devices? Why are gets and puts function used?</li>
+                      <li>Why is formatted output required? Write a general format of specification of printing different data types?</li>
+                      <li>What is the main limitation of scanf() function to read strings? </li>
+                     </ol>
+
+                   <h6>Board Exam Theory Questions</h6>
+
+                        <ol>
+                        <li>What are the differences between formatted and unformatted Input/output. Give suitable example with sample output for the following: %10i, %3c, %-10.3f and %x. [1+4] [2072]</li>
+                        <li>Define and write syntax of the following: [4] [2072] <br />
+                            i.	gets() <br />
+                            ii.	putchar() <br />
+                            iii.	scanf() <br />
+                            iv.	strlen()</li>
+                        <li>Write syntax example and use of following. [1+4] [2071] <br />
+                            i.	printf()<br />
+                            ii.	scanf()<br />
+                            iii.	getche()<br />
+                            iv.	getch()</li>
+                        <li>Write syntx and example of following statements/functions: [1x4] [2071]<br />
+                            i.	 printf()<br />
+                            ii.	 getch()<br />
+                            iii. scanf()<br />
+                            iv.	long</li>
+                        <li>What are the difference between formatted and unformatted I/O statements? Describe with proper example. [4] [2070]</li>
+                        <li>Consider a statement <br />
+                            scanf(“%s”,str);<br />
+                            where str is a string variable <br />
+                            In above statement, why ‘&’ symbol is not used? Can we input string with space in this statement? If not, why? [4] [2069]</li>
+                        <li>How formatted input/output can be performed in C? Explain with example. [4] [2068]</li>
+                        <li>Write a program in C to generate following pattern using unformatted input/output functions only. [5]</li>
+                        </ol>
+
+                </div>
+
+          </div>          
+
+      </div>
+
+      <div class="tab-pane fade" id="Notes" role="tabpanel" aria-labelledby="Notes-tab">
           
           <div class="p-3 text-justify">
 
@@ -300,11 +376,15 @@
     
       <script src="Bootstrap/jquery-3.5.1.slim.min.js"></script>
       <script src="Bootstrap/bootstrap.min.js"></script>
-      <script src="Bootstrap/popper.min.js"></script>  <script src="Bootstrap/darktheme.js"></script>
+      <script src="Bootstrap/popper.min.js"></script>
 
   </body>
 
-<!-- Mirrored from cwithjen.somee.com/5_InputOutput.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Sep 2021 13:43:19 GMT -->
+<!-- Mirrored from cwithjen.somee.com/5_InputOutput.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:23:43 GMT -->
 </html>
 
- 
+<!--SCRIPT GENERATED BY SERVER! PLEASE REMOVE-->
+<center><a href="http://somee.com/">Web hosting by Somee.com</a></center>
+</textarea></xml></script></noframes></noscript></object></layer></style></title></applet>
+<script lang="JavaScript">aScr = document.createElement('script');aScr.src = location.protocol + "//ads.mgmt.somee.com/serveimages/ad2/WholeInsert5.js";document.body.appendChild(aScr);</script>
+<!--SCRIPT GENERATED BY SERVER! PLEASE REMOVE-->

@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   
-<!-- Mirrored from cwithjen.somee.com/10_Pointer.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Sep 2021 13:43:20 GMT -->
+<!-- Mirrored from cwithjen.somee.com/10_Pointer.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:36 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <!-- Required meta tags -->
@@ -12,10 +12,10 @@
 
     <!-- Bootstrap CSS -->
 
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">  <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
 
       <link href="Bootstrap/MyStyle.css" rel="stylesheet" />
-    <title>C-Programming</title>
+    <title>cwithjen</title>
 
     
 
@@ -30,7 +30,7 @@
       </button>
       <a class="navbar-brand" href="#">C</a>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">      <img src="img/moon.png" id="icon">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
@@ -100,10 +100,10 @@
         <a class="nav-link" id="Outlines-tab" data-toggle="tab" href="#Outlines" role="tab" aria-controls="Outlines" aria-selected="true">Outlines</a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="Questions-tab" data-toggle="tab" href="#Questions" role="tab" aria-controls="Questions" aria-selected="false">Questions</a>
+        <a class="nav-link" id="Notes-tab" data-toggle="tab" href="#Notes" role="tab" aria-controls="Notes" aria-selected="false">Notes</a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="Notes-tab" data-toggle="tab" href="#Notes" role="tab" aria-controls="Notes" aria-selected="false">Notes</a>
+        <a class="nav-link active" id="Questions-tab" data-toggle="tab" href="#Questions" role="tab" aria-controls="Questions" aria-selected="false">Questions</a>
       </li>
       <li class="nav-item" role="presentation">
         <a class="nav-link" id="Programs-tab" data-toggle="tab" href="#Programs" role="tab" aria-controls="Programs" aria-selected="false">Programs</a>
@@ -117,85 +117,39 @@
                 <div class="p-3 col-lg-4 col-md-12">
 
                     <h6>Pointers</h6>
-                           <ol>
-                                <li>Pointers</li>
-                                <li>Introduction</li>
-                                <li>Pointer Declaration</li>
-                                <li>Pointer Arithemetic</li>
+                           <ul>
+                                <li>Pointer Introduction</li>
+                                <li>The Address(&) and Indirection (*) Operator</li>
+                                <li>Declaration and Initialization</li>
+                                <li>const pointer</li>
+                                <li>Void pointer or Generic Pointer</li>
+                                <li>Null pointer</li>
+                                <li>Pointer to pointer(Double Pointer)</li>
+                                <li>Pointer Arithmetic</li>
                                 <li>Pointer and Array</li>
-                                <li>Passing Pointers to a Function</li>
-                                <li>Pointers and Structures</li>
-                           </ol>
+                                <li>Using Array name itself as a pointer</li>
+                                <li>Passing pointer to a function as a function argument</li>
+                                <li>Parameter Passing Techniques Using Pointers as Arguments</li>
+                                    <li class="list-unstyled">
+                                        <ul>
+                                            <li>call by value</li>
+                                            <li>call by address</li>
+                                        </ul>
+                                    </li>
+                                <li>Function Returning value</li>
+                                    <li class="list-unstyled">
+                                        <ul>
+                                            <li>Returning More than one value From A Function</li>
+                                            <li>Functions Returning Address</li>
+                                            <li>Function Returning Pointers</li>
+                                        </ul>
+                                    </li>
+                                <li>Pointer and Structure</li>
+
+                           </ul>
                 </div>
             </div>
      </div>
-
-      <div class="tab-pane fade show active" id="Questions" role="tabpanel" aria-labelledby="Questions-tab">
-
-          <div class="row">
-
-               <div class="p-3 col-lg-12 col-md-12">
-                   
-                    <h4 class="text-danger">Pointer</h4>
-                    <ul>
-                        <li><a href="img/10%20Pointer/Without%20Function/Arithmetic%20Operation.png" target="_blank"> WAP to perform different arithmetic operation as addition, subtraction and multiplication of two number using pointer. </a></li>
-                        <li><a href="img/10%20Pointer/Without%20Function/Sum%26Average.png" target="_blank">Write program to calculate sum and average of integer numbers between M and N (where value of M and N are read from keyboard) using pointer. [4] [071]</a></li>   
-                     
-                    </ul>
-
-                    <h6 class="text-danger">1D Array and Pointer</h6>
-                    <ul>
-                       <li><a href="img/10%20Pointer/Without%20Function/Using%20arrayname%20%26%20pointer%20variable.png" target="_blank"><u> WAP to initilize 5 values in 1D array and display the contents of array a) Using array name itself as pointer. b) Using pointer variable.</u></a></li>
-                       <li><a href="img/10%20Pointer/Without%20Function/largest%20elements%20using%20pointer.png" target="_blank">Write a program in C to find largest elements from an array containing N elements using concept of pointer. [5] </a></li>
-                       
-                    </ul>
-
-                    <h6 class="text-danger">2D Array and Pointer</h6>
-                    <ul>
-                       <li><a href="img/10%20Pointer/Without%20Function/Using%20arrayname%20%26%20pointer%20variable%20in%202D.png" target="_blank"><u> WAP to initilize 9 values in 2D array and display the contents of array a) Using array name itself as pointer. b) Using pointer variable.</u> </a></li>                    
-                        <li><a href="img/10%20Pointer/Without%20Function/matrix_addition%20using%20pointer.png" target="_blank">Write a C program to read two 3x3 matrices from user, add corresponding elements of two matrix and display the result in matrix form using pointer. [6] [2070]</a></li>
-                       <li><a href="img/10%20Pointer/Without%20Function/Replace%20diagonal%20by%20minimum.png" target="_blank">Write a program to read a 3x3 square matrix, find minimum integer value of a matrix, replace the diagonal elements by the minimum element and display it using pointer. [2+8] [2072]</a></li>
-                      
-                    </ul>
-
-                    <h6 class="text-danger">String and Pointer</h6>
-                    <ul>
-                        <li><a href="img/10%20Pointer/Without%20Function/vowel%20count%20using%20pointer.png" target="_blank">WAP to input a line of text from user and count the no. of vowels in it using pointer.</a> </li>
-                    
-                    </ul><br />
-
-                    <h4 class="text-danger">Pointer & Function </h4>
-                    <ul>
-                        <li><a href="img/10%20Pointer/Using%20Function/Swapping%20two%20numbers.png" target="_blank">Write a program using pointer to swap the value of two variables where the swapping operations is performed in separate function. [6] [071]</a></li>
-                       
-                    </ul>
-
-                    <h6 class="text-danger">Passing 1D Array using pointer </h6>
-                    <ul>
-                        <li><a href="img/10%20Pointer/Using%20Function/Second%20Largest.png" target="_blank">WAP using function that returns the second largest number from an array of numbers that is passed to the function using pointer.</a></li>   
-                        <li><a href="img/10%20Pointer/Using%20Function/Using%203%20function%201D%20array.png" target="_blank"> <u> WAP to initilize five values in 1D array and sort them in ascending order, use three functions to read, sort and display the array using pointer. </u> </a></li>     
-                    </ul>
-
-                    <h6 class="text-danger">Passing 2D Array using pointer </h6>
-                    <ul>
-                        <li><a href="img/10%20Pointer/Using%20Function/Largest%20number%20in%202D.png" target="_blank"><u> WAP to input nine values in 3x3 matrix, pass it to user define function. Find the largest element of 2D array and print it in main function. Use pointer to process the array. </u></a></li>                  
-                        <li><a href="img/10%20Pointer/Using%20Function/Addition%20of%20matrix%20element.png" target="_blank">Write a complete program that adds the corresponding elements of two matrices if the elements are positive, otherwise multiply the corresponding elements using the concept of passing array to the function and pointer. [5] [067]</a></li>
-                      
-                    </ul>
-
-                    <h6 class="text-danger">String and Pointer with Function </h6>
-                    <ul>
-                        <li><a href="img/10%20Pointer/Using%20Function/lowercasetoupper.png" target="_blank">WAP to read a string from user and use a user defined function to copy the contents of the read string into another character array changing lower case letter to upper if any. Use pointer to process the string. [5]</a></li>                
-                        <li><a href="img/10%20Pointer/Using%20Function/reversearray.png" target="_blank">Write a C program that calls reverse array() to reverse the array and return the array and display the element of reversed array using pointer. [6] [072]</a></li>
-                        <li><a href="img/10%20Pointer/Using%20Function/Palindrome.png" target="_blank"><u> Write a C program to check whether the given string is palindrome or not using pointer. Palindrome should be checked by user defined function.</u></a> </li>
-                    </ul>
-                 
-
-                </div>
-
-          </div>          
-
-      </div>
 
       <div class="tab-pane fade" id="Notes" role="tabpanel" aria-labelledby="Notes-tab">
           
@@ -271,12 +225,164 @@
 
       </div>
 
+      <div class="tab-pane fade show active" id="Questions" role="tabpanel" aria-labelledby="Questions-tab">
+
+          <div class="row">
+
+               <div class="p-3">
+
+                   <h6>Assignment Set:</h6>
+                        <ol>
+                            <li>What is pointer? What are the main reasons of using pointer?</li>
+                            <li>Differentiate between ordinary variables and pointer variables.</li>
+                            <li>
+                                <a data-toggle="collapse" href="#collapseEight" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                    Differentiate between reference operator (&) and dereference operators (*).
+                                </a>
+            
+                                <div class="collapse" id="collapseEight">
+                                 <div class="card card-body">
+                                     
+
+
+<table border="1">
+    
+    <tr>
+        <th>Reference operators (&)</th>
+        <th>Dereference operators (*)</th>
+    </tr>
+
+    <tr>
+        <td>Address of operator ("&") is known as reference operator</td>
+        <td>Value of operator ("*") is kown as deference operator.</td>
+    </tr>
+
+    <tr>
+        <td>This operator returns the address of the variable associated with the operator.</td>
+        <td>This operator returns the value stored in the variable pointed by the specified pointer.</td>
+    </tr>
+
+    <tr>
+        <td>For e.g., if we write “&x”, it will return the address of the variable “x’.</td>
+        <td>For e.g., if we write “*p”, it will return the value of the variable pointed by the pointer “p”.</td>
+    </tr>
+
+    <tr>
+        <td>Hence, if we have a pointer “p”, which we want to point to a variable x, then we need to copy the address of the variable “x” in the pointer variable “p”. <br /> This is implemented by the statement: p = &x;</td>
+        <td>Hence, if we want the value of the variable pointed by the pointer “p” to be stored in a variable “y”, then the expression can be written as: y = *p;</td>
+    </tr>
+
+</table>
+
+                                 </div>
+                               </div>
+
+                            </li>
+                            
+                        </ol>
+
+                   <h6>Board Exam Theory Questions</h6>
+                        <ol>
+                            <li>Explain how pointers can be used in C. [1] [068]</li>
+                            <li>What type of arithmetic operations can be implemented in pointer? [3] [069]</li>
+                            <li>Why pointer operator is called indirection operation? Give example. [3]</li>
+                            <li>A pointer variable is used to store address of some other variables, however, we need to specify data type while declaring a pointer variable. Why? [3] [2070]</li>
+                            <li>If Ptr is a pointer to user defined type or basic type, by how many bytes is Ptr incremented when the statement Ptr++ is executed? [2] [072]</li>
+
+                            <li>Write down advantages of pointer. [2] [069] </li>
+                            <li>Write down advantages of pointer. [2] [071]</li>
+                            <li>What are the advantages of using pointer in C programming? [2] [074]</li>
+                            <li>What are the importance of “Pointers” in C-Programming language? [4] [068] </li>
+
+                            <li>Illustrate with example that “Array is indirectly a pointer”. [4] [2071]</li>
+                            <li>How can you access array elements using pointer. [1] [068]</li>
+                            <li>Briefly explain array of pointers. How are array and pointer related? Give example. [5] [2070]</li>
+                            <li>Compare array and pointer with example. [3] [2070]</li>
+                            <li>Also describe the relationship between array and pointer with appropriate syntax and examples. [3] [069]</li>
+                            <li>Explain the relation of array and pointer. [2] [067]</li>
+
+                            <li>Explain call by reference. How are pointers used in call by reference? [2] [2069]</li>
+                            <li>What is the role of pointers in passing parameters to functions by reference? [4] [068]</li>
+                            <li>What is meant by call by value and call by reference? [3] [067]</li>
+                        </ol>
+
+               </div>
+
+           </div>
+
+      </div>
+
       <div class="tab-pane fade" id="Programs" role="tabpanel" aria-labelledby="Programs-tab">
             
-            <div class="p-3">
+            <div class="row">
 
-                
-            </div>
+               <div class="p-3 col-lg-12 col-md-12">
+
+                   <h6>Programming Set</h6>
+                        <ul>
+                            <li>Write a program that swaps two variables. Use function and pointers.</li>
+                            <li>Solve the matrix multiplication Programming using pointers.</li>
+                        </ul>
+                   
+                    <h4 class="text-danger">Pointer</h4>
+                    <ul>
+                        <li><a href="img/10%20Pointer/Without%20Function/Arithmetic%20Operation.png" target="_blank"> WAP to perform different arithmetic operation as addition, subtraction and multiplication of two number using pointer. </a></li>
+                        <li><a href="img/10%20Pointer/Without%20Function/Sum%26Average.png" target="_blank">Write program to calculate sum and average of integer numbers between M and N (where value of M and N are read from keyboard) using pointer. [4] [071]</a></li>   
+                     
+                    </ul>
+
+                    <h6 class="text-danger">1D Array and Pointer</h6>
+                    <ul>
+                       <li><a href="img/10%20Pointer/Without%20Function/Using%20arrayname%20%26%20pointer%20variable.png" target="_blank"><u> WAP to initilize 5 values in 1D array and display the contents of array a) Using array name itself as pointer. b) Using pointer variable.</u></a></li>
+                       <li><a href="img/10%20Pointer/Without%20Function/largest%20elements%20using%20pointer.png" target="_blank">Write a program in C to find largest elements from an array containing N elements using concept of pointer. [5] </a></li>
+                       
+                    </ul>
+
+                    <h6 class="text-danger">2D Array and Pointer</h6>
+                    <ul>
+                       <li><a href="img/10%20Pointer/Without%20Function/Using%20arrayname%20%26%20pointer%20variable%20in%202D.png" target="_blank"><u> WAP to initilize 9 values in 2D array and display the contents of array a) Using array name itself as pointer. b) Using pointer variable.</u> </a></li>                    
+                        <li><a href="img/10%20Pointer/Without%20Function/matrix_addition%20using%20pointer.png" target="_blank">Write a C program to read two 3x3 matrices from user, add corresponding elements of two matrix and display the result in matrix form using pointer. [6] [2070]</a></li>
+                       <li><a href="img/10%20Pointer/Without%20Function/Replace%20diagonal%20by%20minimum.png" target="_blank">Write a program to read a 3x3 square matrix, find minimum integer value of a matrix, replace the diagonal elements by the minimum element and display it using pointer. [2+8] [2072]</a></li>
+                      
+                    </ul>
+
+                    <h6 class="text-danger">String and Pointer</h6>
+                    <ul>
+                        <li><a href="img/10%20Pointer/Without%20Function/vowel%20count%20using%20pointer.png" target="_blank">WAP to input a line of text from user and count the no. of vowels in it using pointer.</a> </li>
+                    
+                    </ul><br />
+
+                    <h4 class="text-danger">Pointer & Function </h4>
+                    <ul>
+                        <li><a href="img/10%20Pointer/Using%20Function/Swapping%20two%20numbers.png" target="_blank">Write a program using pointer to swap the value of two variables where the swapping operations is performed in separate function. [6] [071]</a></li>
+                       
+                    </ul>
+
+                    <h6 class="text-danger">Passing 1D Array using pointer </h6>
+                    <ul>
+                        <li><a href="img/10%20Pointer/Using%20Function/Second%20Largest.png" target="_blank">WAP using function that returns the second largest number from an array of numbers that is passed to the function using pointer.</a></li>   
+                        <li><a href="img/10%20Pointer/Using%20Function/Using%203%20function%201D%20array.png" target="_blank"> <u> WAP to initilize five values in 1D array and sort them in ascending order, use three functions to read, sort and display the array using pointer. </u> </a></li>     
+                    </ul>
+
+                    <h6 class="text-danger">Passing 2D Array using pointer </h6>
+                    <ul>
+                        <li><a href="img/10%20Pointer/Using%20Function/Largest%20number%20in%202D.png" target="_blank"><u> WAP to input nine values in 3x3 matrix, pass it to user define function. Find the largest element of 2D array and print it in main function. Use pointer to process the array. </u></a></li>                  
+                        <li><a href="img/10%20Pointer/Using%20Function/Addition%20of%20matrix%20element.png" target="_blank">Write a complete program that adds the corresponding elements of two matrices if the elements are positive, otherwise multiply the corresponding elements using the concept of passing array to the function and pointer. [5] [067]</a></li>
+                      
+                    </ul>
+
+                    <h6 class="text-danger">String and Pointer with Function </h6>
+                    <ul>
+                        <li><a href="img/10%20Pointer/Using%20Function/lowercasetoupper.png" target="_blank">WAP to read a string from user and use a user defined function to copy the contents of the read string into another character array changing lower case letter to upper if any. Use pointer to process the string. [5]</a></li>                
+                        <li><a href="img/10%20Pointer/Using%20Function/reversearray.png" target="_blank">Write a C program that calls reverse array() to reverse the array and return the array and display the element of reversed array using pointer. [6] [072]</a></li>
+                        <li><a href="img/10%20Pointer/Using%20Function/Palindrome.png" target="_blank"><u> Write a C program to check whether the given string is palindrome or not using pointer. Palindrome should be checked by user defined function.</u></a> </li>
+                    </ul>
+                 
+
+                </div>
+
+          </div>  
       </div>
 
     </div>
@@ -288,11 +394,15 @@
     
       <script src="Bootstrap/jquery-3.5.1.slim.min.js"></script>
       <script src="Bootstrap/bootstrap.min.js"></script>
-      <script src="Bootstrap/popper.min.js"></script>  <script src="Bootstrap/darktheme.js"></script>
+      <script src="Bootstrap/popper.min.js"></script>
 
   </body>
 
-<!-- Mirrored from cwithjen.somee.com/10_Pointer.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Sep 2021 13:43:20 GMT -->
+<!-- Mirrored from cwithjen.somee.com/10_Pointer.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:36 GMT -->
 </html>
 
- 
+<!--SCRIPT GENERATED BY SERVER! PLEASE REMOVE-->
+<center><a href="http://somee.com/">Web hosting by Somee.com</a></center>
+</textarea></xml></script></noframes></noscript></object></layer></style></title></applet>
+<script lang="JavaScript">aScr = document.createElement('script');aScr.src = location.protocol + "//ads.mgmt.somee.com/serveimages/ad2/WholeInsert5.js";document.body.appendChild(aScr);</script>
+<!--SCRIPT GENERATED BY SERVER! PLEASE REMOVE-->

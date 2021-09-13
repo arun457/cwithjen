@@ -1,45 +1,52 @@
-﻿.RegistrationCentered{
-    position: fixed;
-    top: 20%;
-    left: 25%;
-    width: 50%;
+﻿
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body {
+  background-color: rgba(0,0,0,0.1);
 }
 
-.SignInCentered{
-    top: 5%;
-    left: 10%;
-    width: 50%;
+/*Line*/
+.line {
+height:2px; width:100%; border-width:0; color:black; background-color:black;
 }
 
-#icon
-{
-    width: 30px;
-    cursor: pointer;
+/* styling paper */
+#paper {
+  width: 600px;
+  height: 4010px;
+  position: relative;
+  margin: 20px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #888;
 }
 
-:root
-{
-    --background-color: #edf2fc;
-    --font-color: #212121;
+/* styling red vertical line */
+#paper::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background-color: rgba(255,0,0,0.6);
 }
-.dark-theme
-{
-    --background-color: rgba(24, 26, 27, 0.96);    
-    --font-color: rgba(255, 255, 255, 0.88);
-}
-body
-{   
-    color: var(--font-color) !important;
-    background-color: var(--background-color) !important;
-}
-a
-{ 
-    color: inherit;
-} 
 
-/* a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-} */
+/* styling blue horizontal lines */
+#pattern {
+  height: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
 
-/* old background color opacity = 0.94 */
+/* styling text content */
+#content {
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 16px;
+  line-height: 25px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 19px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}

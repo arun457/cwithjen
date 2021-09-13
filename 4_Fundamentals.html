@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   
-<!-- Mirrored from cwithjen.somee.com/4_Fundamentals.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Sep 2021 13:43:18 GMT -->
+<!-- Mirrored from cwithjen.somee.com/4_Fundamentals.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:23:43 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <!-- Required meta tags -->
@@ -12,10 +12,10 @@
 
     <!-- Bootstrap CSS -->
 
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">  <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="Bootstrap/bootstrap.min.css" rel="stylesheet" />
 
       <link href="Bootstrap/MyStyle.css" rel="stylesheet" />
-    <title>C-Programming</title>
+    <title>cwithjen</title>
 
     
 
@@ -30,7 +30,7 @@
       </button>
       <a class="navbar-brand" href="#">C</a>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">      <img src="img/moon.png" id="icon">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
@@ -101,7 +101,11 @@
       </li>
 
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="Notes-tab" data-toggle="tab" href="#Notes" role="tab" aria-controls="Notes" aria-selected="false">Notes</a>
+        <a class="nav-link" id="Notes-tab" data-toggle="tab" href="#Notes" role="tab" aria-controls="Notes" aria-selected="false">Notes</a>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="Questions-tab" data-toggle="tab" href="#Questions" role="tab" aria-controls="Questions" aria-selected="false">Questions</a>
       </li>
 
     </ul>
@@ -112,12 +116,54 @@
                    <div class="row">
                         <div class="p-3 col-lg-4 col-md-12">
                             <h6>C Fundamentals</h6>
-                              <ol>
-                                <li>Character Set, Keywords, and Data Types</li>
-                                <li>Preprocessor Directives</li>
-                                <li>Constants and Variables</li>
-                                <li>Operators and Statements</li>
-                              </ol>
+                              <ul>
+                                  <li>C Tokens</li>
+                                    <li class="list-unstyled">
+                                        <ul>
+                                            <li>Identifiers</li>
+                                            <li>Variables</li>
+                                                <li class="list-unstyled">
+                                                    <ul>
+                                                        <li>Variable Declaration</li>
+                                                        <li>Rules for Declaring Variables</li>
+                                                        <li>Types of Variables</li>
+                                                        <li>Scope of Variables</li>
+                                                    </ul>
+                                                </li>
+                                            <li>Keywords</li>
+                                            <li>Literals</li>
+                                                <li class="list-unstyled">
+                                                    <ul>
+                                                        <li>Numeric</li>
+                                                        <li>Boolean</li>
+                                                        <li>Character</li>
+                                                    </ul>
+                                                </li>
+                                            <li>Data types</li>
+                                                <li class="list-unstyled">
+                                                    <ul>
+                                                        <li>Basic Data types</li>
+                                                        <li>Derived Data types</li>
+                                                    </ul>
+                                                </li>
+                                            <li>Constants</li>
+                                            <li>Statements</li>
+                                                <li class="list-unstyled">
+                                                    <ul>
+                                                        <li>Simple Statements</li>
+                                                        <li>Compound Statements</li>
+                                                    </ul>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                
+                                <li>Expression evaluation</li>
+                                <li>Type-casting in expression</li>
+                                <li>Format Specifies</li>
+                                <li>Comments</li>
+                              </ul>
+
+
                         </div>
                     </div>
 
@@ -125,11 +171,33 @@
 
         
 
-      <div class="tab-pane fade" id="Questions" role="tabpanel" aria-labelledby="Questions-tab">
+      <div class="tab-pane fade show active" id="Questions" role="tabpanel" aria-labelledby="Questions-tab">
 
           <div class="row">
 
-               <div class="p-3 col-lg-4 col-md-12">
+               <div class="p-3">
+
+                   <h6>Assignment Set</h6>
+                    <ol>
+                        <li>What data type & type qualifiers are available in C? Explain with examples.</li>
+                        <li>What are the rules for declaring a variable in C program? What are the ways of giving values to variable?</li>
+                        <li>Define preprocessor directives? What are their uses in C?</li>
+                        <li>What are differences between implicit & explicit type conversion in C? </li>
+                    </ol>
+
+                   <h6>Board Exam Questions</h6>
+                   <ol>
+                        <li>What is a data type? [1] [2067]</li>
+                        <li>What are identifiers? List the rules to define valid C identifiers. [2+3] [2073]</li>
+                        <li>Differentiate between declaration and definition. Explain structure of C program with an appropriate example. [4] [2071]</li>
+                        <li>What are preprocessor directives? Explain constants and variables. [2+2] [2071]</li>
+                        <li>Why do we include < stdio.h > in our program? Can we write a C program without using any header file? Justify your answer. [2+2] [2069]</li>
+                        <li>What are preprocessor directives in C? Why are they needed? [2] [2068]</li>
+                        <li>Write a syntax in C-programming with example: scanf. [2] [2068] [2067]</li>
+                        <li>What are the significant meaning of ‘&’ and ‘*’ established in C programming? [4] [2067]</li>
+                        <li>What are the demerits of C programming? [2] [Board]</li>
+                   </ol>
+
 
 
                 </div>
@@ -138,7 +206,7 @@
 
       </div>
 
-      <div class="tab-pane fade show active" id="Notes" role="tabpanel" aria-labelledby="Notes-tab">
+      <div class="tab-pane fade" id="Notes" role="tabpanel" aria-labelledby="Notes-tab">
           
           <div class="p-3 text-justify">
 
@@ -455,11 +523,15 @@
     
       <script src="Bootstrap/jquery-3.5.1.slim.min.js"></script>
       <script src="Bootstrap/bootstrap.min.js"></script>
-      <script src="Bootstrap/popper.min.js"></script>  <script src="Bootstrap/darktheme.js"></script>
+      <script src="Bootstrap/popper.min.js"></script>
 
   </body>
 
-<!-- Mirrored from cwithjen.somee.com/4_Fundamentals.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Sep 2021 13:43:18 GMT -->
+<!-- Mirrored from cwithjen.somee.com/4_Fundamentals.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:23:43 GMT -->
 </html>
 
- 
+<!--SCRIPT GENERATED BY SERVER! PLEASE REMOVE-->
+<center><a href="http://somee.com/">Web hosting by Somee.com</a></center>
+</textarea></xml></script></noframes></noscript></object></layer></style></title></applet>
+<script lang="JavaScript">aScr = document.createElement('script');aScr.src = location.protocol + "//ads.mgmt.somee.com/serveimages/ad2/WholeInsert5.js";document.body.appendChild(aScr);</script>
+<!--SCRIPT GENERATED BY SERVER! PLEASE REMOVE-->
