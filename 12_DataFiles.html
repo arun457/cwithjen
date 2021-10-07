@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   
-<!-- Mirrored from cwithjen.somee.com/12_DataFiles.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:39 GMT -->
+<!-- Mirrored from cwithjen.somee.com/12_DataFiles.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 17:09:12 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <!-- Required meta tags -->
@@ -147,14 +147,196 @@
           <h6>Board Exam Theory Questions</h6>
 
             <ol>
-                <li>What are different input/output functions used with data files in C? Explain with syntax and examples. [4] [074]</li>
+                <li>
+                            <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                  What are different input/output functions used with data files in C? Explain with syntax and examples. [5] [074] [068] [067]       <span class="text-danger font-weight-bold"> (Updated)</span> 
+                            </a>
+            
+                            <div class="collapse" id="collapseOne">
+                                <div class="card card-body">
+                                    
+
+
+              There are many I/O functions in the C library which are given below. <br /><br />
+              
+              <table border="1" >
+             
+                  <tr>
+                      <th></th>
+                      <th>Function</th>
+                      <th>Description</th>
+                      <th>Example</th>
+                  </tr>
+        
+
+                  <tr class="text-danger">
+                      <th rowspan="2">Character I/O function</th>
+                      <th>fputc </th>
+                      <th>Used to write a character to a file.</th>
+                      <th>fputc(ch,fp)</th>
+                      
+                  </tr>
+
+                  <tr class="text-danger">
+
+                      <th>fgetc</th>
+                      <th>Used to read a character from a file. </th>
+                      <th>ch = fgetc(fp)</th>             
+                  </tr>
+
+
+                  <tr class=" text-info">
+                      <th rowspan="2">String Input/Output function</th>
+                      <th>fputs</th>
+                      <th>Used to write a string to a file.</th>
+                      <th>fputs(ch,fp)</th>
+                  </tr>
+
+                  <tr class=" text-info"> 
+                        
+                      <th>fgets</th>
+                      <th>Used to read a string from file.</th>
+                      <th>fgets(ch,50,fp)</th>                    
+                  </tr>
+
+
+                  <tr class="text-success">
+                      <th rowspan="2">Formatted Input/Output function</th>
+                      <th>fprintf()</th>
+                      <th>Used to write integer, float, char or string data to a file.</th>
+                      <th>fprintf(fp, "%s%d%f", s.name, s.rollno, s.marks)</th>                    
+                  </tr>
+
+                  <tr class="text-success">
+                      <th> fscanf() </th>
+                      <th>Used to read integer, float, char or string value from a file.</th>
+                      <th> fscanf(fp, "%s%d%d", &s.name, &s.age, &s.marks) </th>           
+                  </tr>
+
+                  <tr class="text-warning">
+                      <th rowspan="2"> Record Input/Output function </th>
+                      <th> fwrite() </th>
+                      <th>Used for record output</th>
+                      <th> fwrite(&s, sizeof(s) ,1 ,fp) </th>                   
+                  </tr>
+
+                  <tr class="text-warning">
+
+                      <th> fread() </th>
+                      <th>Used for record input. </th>
+                      <th> fread(&s, sizeof(s) ,1 ,fp) </th>         
+                  </tr>
+
+              </table> 
+
+              <br /><br />
+
+              <div class="row">
+
+                  <img src="img/12%20Data%20Files/Input%20Output%20Function/fputs.png"  class="col-lg-4 col-md-6 col-sm-12 img-thumbnail" width="100"  />
+
+              </div>
+
+                                </div>
+                            </div>
+
+                </li>
+
+                <li>
+                    <a data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                Explain, error-handling process during reading and writing in a data files. State the typical error situation during I/O operation in file. [3 + 3] [068] [067]         <span class="text-danger font-weight-bold"> (Updated)</span> 
+                            </a>
+            
+                            <div class="collapse" id="collapseTwo">
+                                <div class="card card-body">
+                                    
+
+File handling operations may fail due to anyone of the following reasons:
+
+              <ol>
+                  <li>A file for reading may not be present on the disk.</li>
+                  <li>Insufficient disk space for opening a file for writing.</li>
+                  <li>Write protected disk does not allow storage of data on it. </li>
+                  <li>Dealing with corrupt file.</li>
+              </ol> <br />
+
+              To handle these error we need to check whether the intended data files has opened successfully or not by comparing the result of fopen() function with NULL character. 
+              fopen() function points to the beginning of the file if file is opened successfully otherwise it returns NULL. 
+              <br /> <br />
+              <i>Code for handling error during file opening.</i>
+              
+              <img src="img/12%20Data%20Files/null.png" class="img-thumbnail" width="400" /><br />
+
+              <i>Other useful functions for hanlding error during read/write operations are:</i>
+             
+              <table border="1" class="table table-dark">
+                  <tr>
+                      <td>ferror()</td>
+                      <td>This function reports any error during a read/write operation on a file. </td>
+                      <td>Its prototype is: int ferror(file_pointer_variable);</td>
+                  </tr>
+
+                  <tr>
+                      <td>perror()</td>
+                      <td>This function writes the error message specified by the compiler.</td>
+                      <td>Its prototype is: void perror(error_message);</td>
+                  </tr>
+
+              </table> 
+                                </div>
+                     </div>
+
+                </li>
+
+                <li>
+                    
+
+                    <a data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                         How the contents in the file can be randomly accessed? [4] [067] <span class="text-danger font-weight-bold"> (Updated)</span> 
+                            </a>
+            
+                            <div class="collapse" id="collapseThree">
+                                <div class="card card-body">
+                                    
+
+There is no need to read each record sequentially, if we want to access a particular record. C supports these functions for random access file processing. <br /><br />
+
+<h5 class="text-danger">1. fseek()</h5>
+This function is used for seeking the pointer position in the file at the specified byte.<br /><br />
+
+<b> Syntax: fseek( File pointer, Displacement, pointer position);</b>
+<b>Example: fseek(fp, 10L, 0)</b> where <br />
+
+File pointer: It is the pointer which points to the file.<br />
+Displacement: It is positive or negative, attached with L because this is a long integer.<br />
+Pointer position: This sets the pointer position in the file whose value can be 0 (Beginning), 1 (Current) or 2 (End of file). <br /><br />
+
+<h5 class="text-danger">2. ftell()</h5>
+This function returns the value of the current pointer position in the file.The value is count from the beginning of the file.<br /><br />
+
+<b> Syntax: ftell(fp); </b><br />
+
+
+<h5 class="text-danger">3. rewind()</h5>
+This function is used to move the file pointer to the beginning of the given file.<br /><br />
+
+<b>Syntax: rewind( fp);</b>
+
+
+                                </div>
+                    </div>
+
+                </li>
+
                 <li>Define opening and closing a file along with suitable examples. [4] [070] </li>
                 <li>What is a data file in C? What are the modes in file handling? Explain briefly. [1+3] [072] </li>
                 <li>List different types of standard I/O used in C. [2] [072] </li>
                 <li>Differentiate between text file and binary file. [2] [069]</li>
                 <li>What do you mean by opening a data file? How is this accomplished? Explain fscanf, fprintf, fread, fwrite functions. [1+3+4] [068]</li>
-                <li>What are the inputs and outputs functions used with data files? Explain, error-handling process during reading and writing in a data files. [5+3] [068]</li>
-                <li>Explain the I/O operations on file with suitable example and also state the typical error situation during I/O operations in file. How the contents in the file can be randomly accessed? [6+4] [067]</li>
+                
             </ol>
 
           </div>
@@ -286,9 +468,39 @@
               <br /><br /><br />
 
               
-              <h4 class="list-group-item list-group-item-action list-group-item-secondary">3. Check if file was successfully opened or not</h4>
-              A NULL value is returned to the file pointer by the fopen() function if it fails to connect to the file due to some reaons. fopen() can fail due to lack of permission, removal of the secondary storage medium or a full device.<br /> <br />
+              <h4 class="list-group-item list-group-item-action list-group-item-secondary">3. Error Handling in File Operations <span class="text-danger font-weight-bold"> (Updated)</span> </h4>
+              File handling operations may fail due to anyone of the following reasons:
+
+              <ol>
+                  <li>A file for reading may not be present on the disk.</li>
+                  <li>Insufficient disk space for opening a file for writing.</li>
+                  <li>Write protected disk does not allow storage of data on it. </li>
+                  <li>Dealing with corrupt file.</li>
+              </ol>
+
+              To handle these error we need to check whether the intended data files has opened successfully or not by comparing the result of fopen() function with NULL character. 
+              Since fopen() function points to the beginning of the file if file is opened successfully otherwise it returns NULL. 
+              <br /> <br />
+              <i><b>Code for handling error during file opening.</b></i>
+              <br /> <br />
               <img src="img/12%20Data%20Files/null.png" class="img-thumbnail" width="600" /> <br /><br />
+
+              Other useful functions for hanlding error during read/write operations are:
+             
+              <table border="1" class="table table-dark">
+                  <tr>
+                      <td>ferror()</td>
+                      <td>This function reports any error during a read/write operation on a file. </td>
+                      <td>Its prototype is: int ferror(file_pointer_variable);</td>
+                  </tr>
+
+                  <tr>
+                      <td>perror()</td>
+                      <td>This function writes the error message specified by the compiler.</td>
+                      <td>Its prototype is: void perror(error_message);</td>
+                  </tr>
+
+              </table> <br />
 
               <i>Note: Exit is a jump statement in C which takes an integer (zero or non-zero) to represent different exit status. 
                   Exit Success is indicated by exit(0) statement which means successful termination of the program. 
@@ -374,9 +586,6 @@
               </table> 
 
               <br /><br />
-
-              
-
 
               <div class="row">
 
@@ -478,7 +687,7 @@
 
   </body>
 
-<!-- Mirrored from cwithjen.somee.com/12_DataFiles.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:39 GMT -->
+<!-- Mirrored from cwithjen.somee.com/12_DataFiles.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 17:09:12 GMT -->
 </html>
 
 <!--SCRIPT GENERATED BY SERVER! PLEASE REMOVE-->

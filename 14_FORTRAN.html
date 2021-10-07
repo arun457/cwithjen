@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   
-<!-- Mirrored from cwithjen.somee.com/14_FORTRAN.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:39 GMT -->
+<!-- Mirrored from cwithjen.somee.com/14_FORTRAN.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 17:09:13 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <!-- Required meta tags -->
@@ -162,25 +162,206 @@
                 <h6>Board Exam Theory Questions</h6>
 
                 <ol>
-                    
+
+                    <li>
+
+                               <a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                  What do you mean by <span class="text-danger"> formatted </span> and <span class="text-danger"> unformatted </span> input/output statements in Fortran [4] [071]<span class="text-danger font-weight-bold"> (Updated)</span> 
+                                </a>
+            
+                                <div class="collapse" id="collapseOne">
+                                 <div class="card card-body">
+                                     
+
+<b class="text-danger">Formatted input / output statements</b>
+Formatted input/output statements are read(*,*) and write(*,*) in fortran.
+The read(*,*) statement is used for reading data from input devices in user desire format. 
+The write(*,*) statement is used to write/display data to output devices in user desire format. <br /><br />
+
+<b>
+Syntax: <br />
+read(UNIT=unit_no,FMT=format_no) list_of_variables_separated_by_comma<br />
+write(UNIT=unit_no,FMT=formt_no) list_of_variables_separated_by_comma<br /><br />
+</b>
+
+Here, unit_no is an integer that represents input or output device.
+A computer may have multiple input and output devices such as keyboard, magnetic tape, card reader, monitor, printer etc. 
+In this case, a unique number is given to each device. An asterisk (*) in read() function represents stdin i.e. the keyboard and in write() function it represents stdout i.e. monitor. 
+So, we can either specify a particualr device number in UNIT field or * for default device. <br /><br />
+
+The format_no refers to a label for a format statement. We can write an asterisk (*) to indicate default formatting. <br /><br />
+
+<b>
+Example of read and write with default unit and default format:<br />
+read(*,*),list_of_variables_separated_by_comma  <br />
+write(*,*),list_of_variables_separated_by_comma<br /><br />
+</b>
+
+Here, comma at beginning of the variable-list is optional. <br /><br />
+
+<i>
+<u>c Example of Formatted input/ouput </u>     <br />
+      program addition<br />
+      integer a,b,c<br />
+      write(*,*)'Enter any two numbers'<br />
+      read(*,*)a,b<br />
+      c = a + b<br />
+      write(*,*)'Required addition is ',c<br />
+      end<br /><br />
+</i>
+
+<b class="text-danger">Unformatted input / output statements </b>
+Unformatted input/output statements are read*, and print*, in fortran. 
+When unformatted input/output statements are used, the computer itself decides the formats. <br /><br />
+
+<i>
+<u>
+c Unformatted input/ouput </u><br />
+      program addition<br />
+      integer a,b,c<br />
+      print*,'Enter any two numbers'<br />
+      read*,a,b<br />
+      c = a + b<br />
+      print*,'Required addition is ',c<br />
+      end
+</i>
+                                 </div>
+                               </div>
+
+                    </li>
+
+                    <li>
+
+                                <a data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                  Describe the <span class="text-danger"> formatted </span> input and output statement in FORTRAN programming language with its syntax. [4] [067] [071]<span class="text-danger font-weight-bold"> (Updated)</span> 
+                                </a>
+            
+                                <div class="collapse" id="collapseTwo">
+                                 <div class="card card-body">
+                                     
+
+<h5 class="text-danger">Formatted input and output statements</h5>
+Formatted input/output statements are read(*,*) and write(*,*) in fortran.
+The read(*,*) statement is used for reading data from input devices in user desire format. 
+The write(*,*) statement is used to write/display data to output devices in user desire format. <br /><br />
+
+<b>
+Syntax: <br />
+read(UNIT=unit_no,FMT=format_no) list_of_variables_separated_by_comma<br />
+write(UNIT=unit_no,FMT=formt_no) list_of_variables_separated_by_comma<br /><br />
+</b>
+
+Here, unit_no is an integer that represents input or output device. An asterisk (*) represents default device that is keyboard in read() and monitor in write() statements. 
+<br /><br />
+
+The format_no refers to a label for a format statement. We can write an asterisk (*) to indicate default formatting. 
+However we can specify some particular input or output format, e.g. how may decimals in real numbers. For this we use FORMAT statement. 
+
+<br /><br /><b>
+Syntax of FORMAT statement is:
+N FORMAT(f1,f2,f3,...fn)
+where
+</b>
+
+<ul>
+    <li>N is the statement number and must be for each format statement. It can be placed anywhere in the program.</li>
+    <li>f1,f2,f3,...fn are the format specifications and these must be seperated by commas and enclosed within parenthesis. </li>
+</ul> <br />
+
+The most common format code letters are:
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>General Format</th>
+    </tr>
+
+    <tr>
+        <td>F Format</td>
+        <td>The symbol F is used to denote the real data expressed in decimal form. </td>
+        <td>Fw.d where w is field width and d is precision.</td>
+    </tr>
+
+    <tr>
+        <td>A Format</td>
+        <td>The symbol A is used for character type data. </td>
+        <td>Aw where w is the width which is optional. </td>
+    </tr>
+
+    <tr>
+        <td>I Format</td>
+        <td>The symbol I is used to denote the integer data. </td>
+        <td>Iw where w is the width of the integer data.</td>
+    </tr>
+
+    <tr>
+        <td>E Format</td>
+        <td>The symbol E is used to denote a real data expressed in exponential form. </td>
+        <td>Ew.d where w is the total field width including mantissa (i.e. base) and d is the decimal width (i.e. precision).</td>
+    </tr>
+
+    <tr>
+        <td>X Format</td>
+        <td>The symbol X is used to skip some columns while printing data. </td>
+        <td>nX where n is the number of columns to be skipped in case of reading data from keyboard.</td>
+    </tr>
+
+    <tr>
+        <td>T Format</td>
+        <td>This format is used to give tab.</td>
+        <td>Tn where n specifies the number of column form which the output will be started. </td>
+    </tr>
+</table><br />
+
+<i>
+<b>
+c     Formatted input/ouput Example <br />
+</b>
+      program i/o example<br />
+      real pi<br />
+      write(*,*)'Enter the value for pi'<br />
+      read(*,101)pi<br />
+      write(*,102)'pi=',pi<br />
+101   Format(F8.6)<br />
+102   Format(A5,F6.4)<br />
+      End <br /><br />
+      
+<b> Output </b><br />
+Enter the value for pi<br />
+3.141592  <br />
+pi=3.1416
+
+</i>
+
+
+                                 </div>
+                               </div>
+                    </li>
+                      
                     <li>How computer programming language C is different from FORTRAN? [4] [067]</li>
                     <li>What are the characteristics of FORTRAN programming? [3] [074] </li>
-                    <li>What is the structure of FORTRAN program? [5] [073]</li>
+                    <li>What are FORTRAN’s constants, variables and library functions? Explain. [4] [067] </li>
+
+                    <li>What is the structure of FORTRAN program? [5] [073] [068]</li>
+                    <li class="pb-2">Explain the FORTRAN structure. What are data types in FORTRAN. [2+2] [070]</li>
+
+                    <li>Compare arithmetic and logical if statement in FORTRAN. [7] [071]</li>
+                    <li>Differentiate between arithmetic and logical if statement. [2+2] [068]</li>
+                    <li>Compare arithmetic and logical if statements in FORTRAN with suitable example. [4] [070]</li>
+                    <li class="pb-2">Differentiate “Logical if” with “Arithmetic if” in FORTRAN with suitable example. [6] [069]</li>
+
                     <li>Compare unconditional goto and computed goto in FORTRAN with syntax. [3] [073]</li>
                     <li>Explain different types of goto statements in FORTRAN programming with suitable example. [4] [072] </li>
-                    <li>Compare DO and implied DO statement in FORTRAN. [3] [072]</li>
-                    <li>What do you mean by formatted and unformatted input/output statements in Fortran [4] [071] </li>
-                    <li>Compare arithmetic and logical if statement in FORTRAN. [7] [071]</li>
-                    <li>Explain the FORTRAN structure. What are data types in FORTRAN. [2+2] [070]</li>
-                    <li>Describe the formatted input and output statement in FORTRAN programming language with its syntax. [4] [067]</li>
-                    <li>What are FORTRAN’s constants, variables and library functions? Explain. [4] [067] </li>
-                    <li>Explain the structure of a FORTRAN program. Differentiate between arithmetic and logical if statement. [2+2] [068]</li>
+                    <li class="pb-2">Compare “Computed goto” statement (FORTRAN) and “switch” (C language). [069]</li>
+      
                     <li>How are do-loops used in FORTRAN? Explain with example. Compare it with implied do-loop. [2] [069] </li>
                     <li>Explain with suitable example to show how an Implied Do loop works in FORTRAN. [4] [072]</li>
-                    <li>Give suitable example which explain the concept of Formatted I/O in Fortran. [4] [071]</li>
-                    <li>Compare arithmetic and logical if statements in FORTRAN with suitable example. [4] [070]</li>
-                    <li>Differentiate “Logical if” with “Arithmetic if” in FORTRAN with suitable example. [6] [069]</li>
-                    <li>Compare “Computed goto” statement (FORTRAN) and “switch” (C language). [069]</li>
+                    <li class="pb-2">Compare DO and implied DO statement in FORTRAN. [3] [072]</li>
+
+                   
                     <li>What is the syntax of two dimensional arrays in FORTRAN? Explain with example. [4] [069]</li>
 
                 </ol>
@@ -825,9 +1006,10 @@
            
 	                    <li><a href="img/14%20FORTRAN/4%20Loops/2%20do%20while/2Palindrome.png" target="_blank"><u> WAP in FORTRAN to check whether a positive integer entered from the keyboard is a palindrome or not. (Hints: A number is palindrome if its reverse is equal to the number itself). [8] [068]</u></a></li>
                
-	                    <li class="pb-3">Write the program to convert a binary number to a decimal number using FORTRAN programming language. [4] [071]</li>
-
-
+	                    <li><a href="img/14%20FORTRAN/4%20Loops/2%20do%20while/binary2decimal.png" target="_blank"><u>Write the program to convert a binary number to a decimal number using FORTRAN programming language. [4] [071] </u> </a> <span class="text-danger font-weight-bold"> (Updated)</span> </li>
+       
+                        <li class="pb-3"><a href="img/14%20FORTRAN/4%20Loops/2%20do%20while/decimal2Binary.png" target="_blank"><u>Write the program to convert a decimal number to a binary number using FORTRAN programming language. [4] [071] </u> </a> <span class="text-danger font-weight-bold"> (Updated)</span> </li>
+                  
                    </ul>
 
 
@@ -839,18 +1021,20 @@
                 
                         <li><a href="img/14%20FORTRAN/Array/1D/3Smallest.png" target="_blank"><u> Write a FORTRAN program to read n numbers and display smallest number among them. [5]</u></a></li>
        
-                       <li><a href="img/14%20FORTRAN/Array/1D/4Ascending.png" target="_blank"><u> Write a program in FORTRAN to read an array containing N elements, sort this data in ascending order and display the result. [5]</u></a></li>
+                       <li><a href="img/14%20FORTRAN/Array/1D/4Ascending.png" target="_blank"><u> Write a program in FORTRAN to read an array containing N elements, sort this data in ascending order and display the result. [5] [069] </u></a></li>
                 
-                       <li>Write a FORTRAN program to read ten integer numbers, store them in array arrange them in ascending order and display the sorted list. [1+1+6] [069]</li>
-                       <li>Write a program in FORTRAN to take a position and a number and insert this number on this position inside an array containing n elements. [8] [067]</li>
+                       <li><a href="img/14%20FORTRAN/Array/1D/5Position.png" target="_blank"><u> Write a program in FORTRAN to take a position and a number and insert this number on this position inside an array containing n elements. [8] [067]</u></a> <span class="text-danger font-weight-bold"> (Updated)</span>  </li>
+                  
                    </ul>
 
                    <h4 class="text-danger">2D ARRAY</h4>
                    <ul>                        
                         <li><a href="img/14%20FORTRAN/Array/2D/1SumInMatrix.png" target="_blank"><u> Write a program in FORTRAN to read two matrices from user find their sum and display the sum. [8] [068] </u></a> </li>
              
-                        <li>Write a FORTRAN program to add and subtract two matrices and display the results in matrix form. [7] [072]</li>
-                        <li>Write a FORTRAN program to read m*n matrix, transpose it and display both the matrices. [8] [070]</li>
+                        <li><a href="img/14%20FORTRAN/Array/2D/1Sum%26Difference.png" target="_blank"><u>Write a FORTRAN program to add and subtract two matrices and display the results in matrix form. [7] [072] </u></a> <span class="text-danger font-weight-bold"> (Updated)</span> </li>
+              
+                        <li><a href="img/14%20FORTRAN/Array/2D/3Transpose.png" target="_blank"><u>Write a FORTRAN program to read m*n matrix, transpose it and display both the matrices. [8] [070] </u></a> <span class="text-danger font-weight-bold"> (Updated)</span></li>
+                  
                    </ul>
 
                 </div>
@@ -870,7 +1054,7 @@
 
   </body>
 
-<!-- Mirrored from cwithjen.somee.com/14_FORTRAN.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:39 GMT -->
+<!-- Mirrored from cwithjen.somee.com/14_FORTRAN.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 17:09:37 GMT -->
 </html>
 
 <!--SCRIPT GENERATED BY SERVER! PLEASE REMOVE-->

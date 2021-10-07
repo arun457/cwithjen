@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   
-<!-- Mirrored from cwithjen.somee.com/9_Array.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:19 GMT -->
+<!-- Mirrored from cwithjen.somee.com/9_Array.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 17:08:59 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <!-- Required meta tags -->
@@ -137,13 +137,15 @@
                                         <li>Three-Dimensional(3-D) Array</li>
                                         </ul>
                                     </li>
-                                </ul>                            </li>
+                                </ul>
+                            </li>
                         <li>Passing Array to a function as a function argument</li>
                             <li class="list-unstyled">
                                 <ul>
                                 <li>Passing 1-D Array to a function as a function argument</li>
                                 <li>Passing 2-dArray to a function as a function argument</li>
-                                </ul>                            </li>
+                                </ul>
+                            </li>
                         <li>Sorting of an array elements</li>
                         <li>Searching</li>
                         <li>Matrix problem</li>
@@ -152,12 +154,16 @@
                                 <li>Matrix Addition</li>
                                 <li>Matrix Transpose</li>
                                 <li>Matrix Multiplication</li>
-                                </ul>                            </li>
+                                </ul>
+                            </li>
                         <li>Character Array</li>
                         <li>String Handling</li>
                             <li class="list-unstyled">
                                 <ul>
-                                <li>String Manipulation String</li>                                </ul>                            </li>
+                                <li>String Manipulation String</li>
+                                </ul>
+                            </li>
+
                     </ul>
             </div>
         </div>
@@ -170,28 +176,155 @@
                <div class="p-3">
 
                    <h6>Assignment Set</h6>
-                        <ul>
+                        <ol>
                             <li>In what way does an array differ from an ordinary variable?</li>
                             <li>Explain how array elements are stored in memory.</li>
                             <li>Differentiate between sorting & searching of array elements.</li>
-                        </ul>
+                        </ol>
 
                    <h6>Board Exam Theory Questions</h6>
 
-                        <ul>
+                        <ol>
+                            <li>
+
+                                <a data-toggle="collapse" href="#collapseA1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                   Explain with an example for compile time initialization of 2D array. [2] [072]  <span class="text-danger font-weight-bold"> (Updated)</span> 
+                                </a>
+            
+                                <div class="collapse" id="collapseA1">
+                                 <div class="card card-body">
+
+                                     
+
+2D arrays can be initilized in both the two ways; the compiler time initilization and the run time initilization. <br /><br />
+
+<b>Compiler Time initilicaiton</b> We can initilize the element of the 2D array during compilation time by <br /><br />
+
+int a[2][2] = {{1,2},{3,4}};<br /><br />
+
+<b>Run Time initilization</b>We can initilize the element of the 2D array during run time by using loop. <br /><br />
+
+for(i=0;i<2;i++)<br />
+{<br />
+ for(j=0;j<2;j++)<br />
+     {<br />
+     scanf("%d",&a[i][j]);<br />
+    }<br />
+}
+
+                                 </div>
+                               </div>
+
+                            </li> 
+                           
+                            <li>
+
+                                <a data-toggle="collapse" href="#collapseA2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                    Can we pass whole array element from function? [2] [069]  [070]   <span class="text-danger font-weight-bold"> (Updated)</span> 
+                                </a>
+            
+                                <div class="collapse" id="collapseA2">
+                                 <div class="card card-body">
+                                     
+
+
+Yes, we can pass whole array element from function by using the name of the array. Passing arrays to function is passing by reference. <br />
+Since name of the array itself represent the memory address of first element of an array, the address of rest of array element can be calculated by using the array name and the index value of the element. 
+<br /><br />
+//Passing array to function<br />
+#include< stdio.h ><br /><br />
+
+void Array(int x[5]); //Function prototype<br /><br />
+
+void main()<br />
+{<br />
+    int a[5] = {1,2,3,4,5},i;<br />
+    Array(a); //Calling function<br />
+}<br /><br />
+
+void Array(int a[5]) //Called Function<br />
+{<br />
+    int i;<br />
+    for(i=0;i<5;i++)<br />
+    {<br />
+        printf("%d\t",a[i]);<br />
+    }<br />
+} <br />
+
+
+                                 </div>
+                               </div>
+                            </li>
+
+                            <li>
+
+                            <a data-toggle="collapse" href="#collapseA3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                Consider a statement: <br /> scanf("%s",str); where str is a string variable <br /> 
+                                In above statement, why '&' symbol is not used? Can we input string with space in this statement? If not, why? [4]
+                                      <span class="text-danger font-weight-bold"> (Updated)</span> 
+                                </a>
+            
+                                <div class="collapse" id="collapseA3">
+                                 <div class="card card-body">
+
+                                     
+
+
+When we use scanf() to read string, we use the "%s" format specifier without using the "&" to access the variable address because string name itself acts as a pointer to the first variable location. 
+That is the name of the string possesses the memory address of the first element of the string. 
+Therefore, &(address-of) operator is not required while using scanf to scan a string. <br /><br />
+
+scanf(“%s”,str); <br /><br />
+
+In the above code, name of the string (str) returns the memory address of the first element of the string (str) i.e. &str[0]. <br /><br />
+
+<b>Next Question</b> 
+String are array of characters and to make the end of the string, C uses the null character (\0) and it is inserted by the compiler automatically at the end of the string.
+The main drawback of scanf() to use to input string using %s format specifier is that the function terminates as soon as it finds a white space because a null character gets automatically appended on encountering a white space to mark the end of the string. <br /><br />
+Therefore when we input string: "Hello World", only the word "Hello" will be stored into the string. Hence, we cannot input string with white space using scanf() and %s format specifier. <br /><br />
+
+To overcome this problem we can use following functions: <br />
+gets(str); <br />
+fgets(str, MAX_LIMIT, stdin); <br />
+scanf("%[^\n]s",str);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 </div>
+                               </div>
+                            </li>
+
                             <li>How two dimensional arrays are created in C programming? [2] [074] </li>
                             <li>What are overflow and underflow errors in context of array? [2] [073] </li>
-                            <li>Can we pass whole array element from function? [2] [070] </li>
+                            
                             <li>What is a string? [2] [2072] </li>
                             <li>Write down the significance of array in C. [2] [2068] </li>
                             <li>Describe the limitations of using getchar and scanf functions for reading strings. [2] [2067]</li>
                             <li>What are the rules that govern the passing of arrays to user defined functions? [3] [2068]</li>
                             <li>Write a syntax in C-programming with example of stcpy. [2] [2068]</li>
-                            <li>Explain how array can be passed to functions. [2] [069] </li>
-                            <li>Explain with an example for compile time initialization of 2D array. [2] [072]</li> 
+                            
+                            
                             <li>Describe how compiler manages according to the number of initializes and size of an array given by a user in case of 1D array. [3] [072]</li>
                             <li>How are one dimensional and two dimensional arrays created in C? Explain with examples. [2+2] [2070]</li>
-                        </ul>
+                        </ol>
 
                 </div>
 
@@ -457,7 +590,7 @@
 
   </body>
 
-<!-- Mirrored from cwithjen.somee.com/9_Array.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:35 GMT -->
+<!-- Mirrored from cwithjen.somee.com/9_Array.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 17:09:04 GMT -->
 </html>
 
 <!--SCRIPT GENERATED BY SERVER! PLEASE REMOVE-->

@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   
-<!-- Mirrored from cwithjen.somee.com/11_Structure.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:36 GMT -->
+<!-- Mirrored from cwithjen.somee.com/11_Structure.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 17:09:07 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <!-- Required meta tags -->
@@ -156,6 +156,56 @@
 
                    <h6>Board Exam Theory Questions</h6>
                         <ol>
+                            <li>
+
+                            <a data-toggle="collapse" href="#collapseP3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                   What is a tag? Must a tag be included in a structure type definition? Must a tag be included in a structure variable declaration? Explain. [1+1+2] [071]  <span class="text-danger font-weight-bold"> (Updated)</span> 
+                                </a>
+            
+                                <div class="collapse" id="collapseP3">
+                                 <div class="card card-body">
+                                     
+
+
+In C, a tag is the identifier used after the keyword struct or union when defining a struct or union.
+The syntax for declaring the structure variable is: <br /><br />
+
+struct student <br />
+{<br />
+    char name[20];<br />
+    int rollno;<br />
+};<br /><br />
+
+struct student s; <br /><br />
+
+Here student is structure name which is a tag and it is optional.  And we can declare the structure variable without tag like:<br /><br />
+
+struct structure <br />
+{<br />
+    char name[20];<br />
+    int rollno;<br />
+}s;<br /><br />
+
+or <br /><br />
+
+struct <br />
+{<br />
+    char name[20];<br />
+    int rollno;<br />
+}s;<br />
+
+
+
+
+
+
+
+
+                                 </div>
+                               </div>
+                            </li>
+
                             <li>Explain structures and nested structures? [3] [074]</li> 
                             <li>Why should we prefer structure over array? [2] [073] </li>
                             <li>Explain nested structure with example. [4] [073]</li>
@@ -164,8 +214,7 @@
                             <li>How can we create and use a structure within another. [3] [072]</li>
                             <li>Explain dot and arrow operators for accessing the members of a structure. [3] [072]</li>
                             <li>What is the principal difference between a structure and an array? [2] [072]</li>
-                            <li>Explain about “Arrays within structures” along with programming example. [4] [071]</li>
-                            <li>What is a tag? Must a tag be included in a structure type definition? Must a tag be included in a structure variable declaration? Explain. [1+1+2] [071]</li>
+                            <li>Explain about “Arrays within structures” along with programming example. [4] [071]</li>     
                             <li>Explain the use of typedef of keyboard in structures. [2] [070]</li>
                             <li>Explain the need of nested structure. [1] [070] </li>
                             <li>What do you mean by nested structures? Give suitable example. [2] [070]  </li>
@@ -257,7 +306,7 @@
               <h6 class="text-primary">Pass the whole structure as a value</h6>
               In this method the entire structure is passed as an argument to a function. Since only a copy of the structure is sent, any changes made to structure members are not reflected into the original structure. It is therefore necessary for the function to return the entire structure back to the calling function. <br /><br />
               For Example: <br />
-              <a href="img/11%20Structure/Structure%20%26%20Function/StructureFunction1.png" target="_blank"><i> Define a structure student with member name, rollno, marks of student. WAP to enter the information of the structure student and display it using function (Call by value). </i> </a> <br /><br />
+              <a href="img/11%20Structure/Structure%20%26%20Function/StructureFunction1.png" target="_blank"  class="img-thumbnail" ><i> Define a structure student with member name, rollno, marks of student. WAP to enter the information of the structure student and display it using function (Call by value). </i> </a> <br /><br />
 
               <h6 class="text-primary">Pass the address of the structure (pass by reference) </h6>
               In this method, the address of the structure is passed to the function. Any changes made to the structure members are reflected on to the original structure. This is because pointers deal direclty with the memory addresses of actual argument. <br /><br />
@@ -440,7 +489,7 @@
 
   </body>
 
-<!-- Mirrored from cwithjen.somee.com/11_Structure.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:38 GMT -->
+<!-- Mirrored from cwithjen.somee.com/11_Structure.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 17:09:11 GMT -->
 </html>
 
 <!--SCRIPT GENERATED BY SERVER! PLEASE REMOVE-->

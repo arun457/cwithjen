@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   
-<!-- Mirrored from cwithjen.somee.com/10_Pointer.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:36 GMT -->
+<!-- Mirrored from cwithjen.somee.com/10_Pointer.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 17:09:05 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <!-- Required meta tags -->
@@ -198,7 +198,7 @@
               Array is known as constant pointers since name of the array itself represent the memory location of first element of an array. 
               So, array is also called constant pointer. <br /><br />
 
-              <img src="img/10%20Pointer/NameofArray.png"  /><br /><br /><br />
+              <img src="img/10%20Pointer/NameofArray.png"  class="img-thumbnail"  /><br /><br /><br />
 
               We can access the values and addresses of an array element by following methods <br /><br />
 
@@ -238,7 +238,7 @@
                             <li>
                                 <a data-toggle="collapse" href="#collapseEight" role="button" aria-expanded="false" aria-controls="collapseExample">
                                 
-                                    Differentiate between reference operator (&) and dereference operators (*).
+                                    Differentiate between reference operator (&) and dereference operators (*).  <span class="text-danger font-weight-bold"> (Updated)</span> 
                                 </a>
             
                                 <div class="collapse" id="collapseEight">
@@ -255,7 +255,7 @@
 
     <tr>
         <td>Address of operator ("&") is known as reference operator</td>
-        <td>Value of operator ("*") is kown as deference operator.</td>
+        <td>Value of operator ("*") is known as deference operator or indirection operator.</td>
     </tr>
 
     <tr>
@@ -284,11 +284,130 @@
 
                    <h6>Board Exam Theory Questions</h6>
                         <ol>
+                            <li>
+                                <a data-toggle="collapse" href="#collapseP1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                    Why pointer operator is called indirection operator? Give example. [3]  <span class="text-danger font-weight-bold"> (Updated)</span> 
+                                </a>
+            
+                                <div class="collapse" id="collapseP1">
+                                 <div class="card card-body">
+                                     
+
+The indirection operator is an unary operator represented by the symbol (*). 
+We use the operator (*) in front of a variable in two distinct ways with pointers, for declaration and for dereference. <br />
+When the pointer is declared, the star (*) indicates that it is a pointer, not a normal variable. <br />
+When the pointer is dereferenced (i.e. use of (*) in front of variable except in variable declaration), 
+the indirection operator is used to obtain the value of a variable to which a pointer points. 
+
+<br /><br />
+For example:<br />
+
+int x = 5, y;<br />
+int *p;<br />
+p = &x; //Pointer p pointing memory address of x<br />
+
+y = *p;  //indirect access to the value of the variable x<br /><br />
+
+Since the pointer pointing to a variable provides an indirect access to the value of the variable stored in its memory address, the pointer operator is also called indirection operator.
+
+
+
+
+
+                                 </div>
+                               </div>
+
+                            </li>
+
+                            <li>
+                                <a data-toggle="collapse" href="#collapseP2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                   A pointer variable is used to store address of some other variables, however, we need to specify data type while declaring a pointer variable. Why? [3] [2070]  <span class="text-danger font-weight-bold"> (Updated)</span> 
+                                </a>
+            
+                                <div class="collapse" id="collapseP2">
+                                 <div class="card card-body">
+                                     
+
+A pointer variable is declared with specific data type, like any other normal variable, so that it will work only with memory address of a given type. 
+Just as integer variable can hold only integers, a character variable can hold the only characters and so forth, each pointer variable can point only to one specific type (int, char, float, double or any user defined data type). 
+<br /><br />
+For example:<br />
+
+int x = 5, y;<br />
+int *p;<br />
+p = &x; //Sotring the address of x<br />
+
+// And while dereferencing a pointer variable i.e.<br />
+
+y = *p;  //dereferenced i.e. y = 5;<br /><br />
+
+Due to the ability of a pointer to directly refer to the value that it points to, it becomes necessary to specify in its declaration which data type a pointer is going to point. 
+
+
+
+                                 </div>
+                               </div>
+
+
+                            </li>
+
+                            <li>
+                                <a data-toggle="collapse" href="#collapseP3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                
+                                    If Ptr is a pointer to user defined type or basic type, by how many bytes is Ptr incremented when the statement Ptr++ is executed? [2] [072]  <span class="text-danger font-weight-bold"> (Updated)</span> 
+                                </a>
+            
+                                <div class="collapse" id="collapseP3">
+                                 <div class="card card-body">
+                                     
+
+An expression like Ptr++ will cause the pointer Ptr to point tot he next value of its type. 
+For example, if Ptr is an integer pointer with an initial value 1000, then after the execution of statement Ptr++; the value of Ptr will be 1002, but not 1001. 
+That is, when we increment a pointer, its value is incremented by the size of the data type that it points to. 
+And the size of the data type is called the scale factor. The scale factros of various data types are shown below. <br /><br />
+
+<table border="1">
+
+    <tr>
+        <th>Data type</th>
+        <th>Scale factor</th>
+    </tr>
+
+    <tr>
+        <td>char </td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>int</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>float</td>
+        <td>4</td>
+    </tr>
+
+    <tr>
+        <td>double</td>
+        <td>8</td>
+    </tr> 
+
+</table>
+
+<br />
+
+However, the exact scale factor may vary from one compiler to another or from one machine to another. 
+
+                                 </div>
+                               </div>
+
+                            </li>
+
                             <li>Explain how pointers can be used in C. [1] [068]</li>
                             <li>What type of arithmetic operations can be implemented in pointer? [3] [069]</li>
-                            <li>Why pointer operator is called indirection operation? Give example. [3]</li>
-                            <li>A pointer variable is used to store address of some other variables, however, we need to specify data type while declaring a pointer variable. Why? [3] [2070]</li>
-                            <li>If Ptr is a pointer to user defined type or basic type, by how many bytes is Ptr incremented when the statement Ptr++ is executed? [2] [072]</li>
 
                             <li>Write down advantages of pointer. [2] [069] </li>
                             <li>Write down advantages of pointer. [2] [071]</li>
@@ -398,7 +517,7 @@
 
   </body>
 
-<!-- Mirrored from cwithjen.somee.com/10_Pointer.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Sep 2021 18:24:36 GMT -->
+<!-- Mirrored from cwithjen.somee.com/10_Pointer.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 17:09:05 GMT -->
 </html>
 
 <!--SCRIPT GENERATED BY SERVER! PLEASE REMOVE-->
