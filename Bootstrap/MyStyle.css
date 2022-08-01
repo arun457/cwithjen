@@ -1,34 +1,19 @@
-﻿/* Google font */
+﻿
+/* Google font */
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-
 body {
-  background-color: rgb(24, 26, 27);
-  color: #fff;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-tabs .nav-link.active {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #fff;
+  background-color: rgba(0,0,0,0.1);
 }
 
 /*Line*/
 .line {
-  height: 2px;
-  width: 100%;
-  border-width: 0;
-  color: black;
-  background-color: black;
+height:2px; width:100%; border-width:0; color:black; background-color:black;
 }
 
 /* styling paper */
 #paper {
   width: 600px;
-  height: 4010px;
+  height: 4050px;
   position: relative;
   margin: 20px auto;
   padding-top: 40px;
@@ -45,7 +30,7 @@ a {
   position: absolute;
   top: 0;
   left: 40px;
-  background-color: rgba(255, 0, 0, 0.6);
+  background-color: rgba(255,0,0,0.6);
 }
 
 /* styling blue horizontal lines */
